@@ -1,4 +1,3 @@
-# -*- coding: UTF-8 -*-
 from flask import Flask
 from flask.ext.babel import Babel
 
