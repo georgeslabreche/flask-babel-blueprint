@@ -1,3 +1,3 @@
 #!/bin/sh
 source ./venv/bin/activate
-python run.py
+python run_ok.py

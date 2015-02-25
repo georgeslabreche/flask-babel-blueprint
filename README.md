@@ -6,8 +6,11 @@ Getting Started
 1. Install
 `bash install.sh`
 
-2. Run
-`bash run.sh`
+2. Run application using Blueprint and a function to create the Flask App (Doesn't work).
+`bash run_nok.sh`
+
+3. Run application that doesn't use Blueprint nor a function to create the Flask App (Works).
+`bash run_ok.sh`
 
 Translations
 ============
@@ -29,7 +32,7 @@ In case you want to redo it yourself or add more text to translate:
 
 5. Compile translations: `bash babel-compile.sh`
 
-6. Should see 'Bonjour' instead of 'Hello' but it doesn't happen.
+6. Should see 'Bonjour' instead of 'Hello'. Doesn't work when Flask App is created using a function (and with Blueprint).
 
 Note
 ====
