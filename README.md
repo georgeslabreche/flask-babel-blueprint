@@ -1,20 +1,18 @@
-# Flask-Babel
-Can't get it to work...
+# Flask-Babel Sample App
 
 Getting Started
 ===============
 1. Install
 `bash install.sh`
 
-2. Run application using Blueprint and a function to create the Flask App (Doesn't work).
-`bash run_nok.sh`
+2. Run application
+`bash run.sh`
 
-3. Run application that doesn't use Blueprint nor a function to create the Flask App (Works).
-`bash run_ok.sh`
 
 Translations
 ============
-Translations are already set and compiled.
+Translations are already set and compiled, this was initialized like so: 'bash babel-init.sh'
+
 In case you want to redo it yourself or add more text to translate:
 
 1. In Jinja2
@@ -28,23 +26,18 @@ In case you want to redo it yourself or add more text to translate:
 
 3. Update translation files: `bash babel-update.sh`
 
-4. Set translations in french .po file: `translations/fr/LC_MESSAGES/messages.po`
+4. Set Albanian translations in .po file: `translations/sq/LC_MESSAGES/messages.po`
+
+4. Set Serbian translations in .po file: `translations/sr/LC_MESSAGES/messages.po`
 
 5. Compile translations: `bash babel-compile.sh`
 
-6. Should see 'Bonjour' instead of 'Hello'. Doesn't work when Flask App is created using a function (and with Blueprint).
+6. Set locale to use in `app/__init__.py` (hardcoded in this example project).
 
-Note
-====
-Getting the locale to translate to has been hardcoded to french  (i.e. "fr").
-The get_locales function fires as expected but translation doesn't actually occur.
-See \_\_init\_\_.py:
+7. Run the app
 
-`@babel.localeselector`
-`def get_locale():`
-  `return 'fr'`
+8. You will either see 'Përshëndetje' or 'Здраво' depending on which locale you set in `app/__init__.py` (sq for Albanian or sr for Serbian)
 
-We should be seeing "Bonjour" instead of "Hello".
 
 
 

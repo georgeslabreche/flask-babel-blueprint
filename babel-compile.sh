@@ -1,2 +1,2 @@
 source ./venv/bin/activate
-pybabel compile -d translations
+pybabel compile -d app/translations

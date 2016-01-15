@@ -9,20 +9,12 @@ def create_app():
     # Create the Flask app.
     app = Flask(__name__)
 
-    '''
-    app.config['BABEL_DEFAULT_LOCALE'] = 'fr'
-    app.config['LANGUAGES'] = {
-        'en': 'English',
-        'fr': 'Français'
-    }
-    '''
-
     babel.init_app(app)
 
     @babel.localeselector
     def get_locale():
-        lang_code = 'fr'
-        print "Get locale '%s'" % lang_code
+        # 'sr' for Serbian and 'sq' for Albanian.
+        lang_code = 'sq'
         return lang_code
 
      # Import a module / component using its blueprint handler variable 

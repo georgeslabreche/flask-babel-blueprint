@@ -10,3 +10,8 @@ mod_test = Blueprint('test', __name__)
 def hello():
 	message = gettext(u'Hello')
 	return message
+
+@mod_test.route('/bye', methods=['GET'])
+def bye():
+	message = gettext(u'Goodbye')
+	return message
