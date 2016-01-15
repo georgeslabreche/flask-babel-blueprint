@@ -12,7 +12,7 @@ Getting Started
 
 Translations
 ============
-Translations are already set and compiled, this was initialized like so: 'bash babel-init.sh'
+Translations are already set and compiled, this was initialized like so: `bash babel-init.sh`
 
 In case you want to redo it yourself or add more text to translate:
 
