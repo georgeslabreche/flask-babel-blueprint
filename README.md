@@ -16,11 +16,10 @@ Translations are already set and compiled, this was initialized like so: 'bash b
 
 In case you want to redo it yourself or add more text to translate:
 
-1. In Jinja2
+1. In Jinja2 template files:
 `{{ _('Hello') }}`
 
-2. In Python
- Use Babel's gettext: 
+2. In Python files use Babel's gettext function: 
 
  `from flask.ext.babel import gettext`
  `gettext('Hello')`
@@ -35,9 +34,9 @@ In case you want to redo it yourself or add more text to translate:
 
 6. Set locale to use in `app/__init__.py` (hardcoded in this example project).
 
-7. Run the app
+7. Run the app.
 
-8. You will either see 'Përshëndetje' or 'Здраво' depending on which locale you set in `app/__init__.py` (sq for Albanian or sr for Serbian)
+8. You will either see 'Përshëndetje' or 'Здраво' depending on which locale you set in `app/__init__.py` (sq for Albanian or sr for Serbian).
 
 
 
