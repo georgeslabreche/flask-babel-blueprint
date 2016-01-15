@@ -1,4 +1,5 @@
 # Flask-Babel Sample App
+A simple sample app to showcase how to setup the Flask-Babel plugin.
 
 Getting Started
 ===============
